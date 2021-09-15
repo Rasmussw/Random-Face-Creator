@@ -159,12 +159,11 @@ public class HelloApplication extends Application {
     }
 
     //Vælg hvilken strørelse øjnene skal have og hvilken farve
-                public static void drawEyes(int eyesSize, int pupilSize) {
+    public static void drawEyes(int eyesSize, int pupilSize) {
         Random random = new Random();
         int biggestEyeSize = random.nextInt(15);
         int lowestEyeSize = 20;
         int randomEyeSize = biggestEyeSize + lowestEyeSize;
-
         int randomEyeColor = random.nextInt(5);
 
         if (randomEyeColor == 1){
@@ -190,7 +189,7 @@ public class HelloApplication extends Application {
 
     }
 
-    //Vælg hvilken farve øjenbrynene skal være (mellem sort og hvid)
+    //Vælg hvilken farve øjenbrynene skal være
     public static void drawEyeBrows(int widthDiameter, int hightDiameter) {
 
         Random random = new Random();
